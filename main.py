@@ -29,12 +29,12 @@ def create_qr(id, amount=None):
     if amount:
         try:
             amount = round(float(amount), 2)
-            url = f"upi://pay?pn=UPAYI&pa={upi_id}&cu=INR&am={amount}"
+            url = f"upi://pay?pn=MoPhO&pa={upi_id}&cu=INR&am={amount}"
         except Exception:
             amount = None
-            url = f"upi://pay?pn=UPAYI&pa={upi_id}&cu=INR"
+            url = f"upi://pay?pn=MoPhO&pa={upi_id}&cu=INR"
     else:
-        url = f"upi://pay?pn=UPAYI&pa={upi_id}&cu=INR"
+        url = f"upi://pay?pn=MoPhO&pa={upi_id}&cu=INR"
 
     version, level, qr_name = myqr.run(
         url,
