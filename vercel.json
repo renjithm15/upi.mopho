@@ -1,5 +1,5 @@
 {
-    "name": "UPAYI",
+    "name": "MoPhO-UPI",
     "version": 2,
     "builds": [{
         "src": "*.py",
